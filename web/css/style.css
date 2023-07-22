@@ -1,9 +1,108 @@
-body {
-    background-color: #215;
+/* css null styles*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
 
-p{
-    text-align: center;
+
+ul[class],
+ol[class] {
+  padding: 0;
+}
+
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+ul[class],
+ol[class],
+li,
+figure,
+figcaption,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+
+ul[class],
+ol[class] {
+  list-style: none;
+}
+
+
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+
+article > * + * {
+  margin-top: 1em;
+}
+
+
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* page */
+
+body{
+    font-family: Girassol;
+    background: #606060;
+}
+
+h1{
     font-size: 45px;
-    color: #fff;
+    color: #003366;
+    margin: 64px 0px 53px 600px;
+}
+
+textarea{
+    padding: 30px 30px 30px 30px;
+    margin: 0px 0px 77px 460px;
+    resize: none;
+    box-shadow: 10px;
+    border-radius: 15px;
+}
+
+button{
+    color: #fff; 
+    text-decoration: none; 
+    user-select: none; 
+    background: #003366;
+    padding: .7em 1.5em;
+    outline: none; 
+    margin: 0px 500px 0px 850px;
+    border-radius: 7px;
 }
